@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.port.View.Main_Menue">
+    <children>
+        <HBox alignment="CENTER" blendMode="DARKEN" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="1300.0" style="-fx-border-color: white; -fx-background-color: red;">
+            <children>
+                <Button  mnemonicParsing="false" onAction="#onUserMenuItemClick" prefHeight="16.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-background-color: white;" text="User" textAlignment="CENTER" />
+                <Button fx:id="marche" mnemonicParsing="false" onAction="#onmarcheMenuItemClick" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-background-color: white;" text="Marche" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </HBox.margin></Button>
+                <Button mnemonicParsing="false" onAction="#onplusMenuItemClick" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-background-color: white;" text="Plus" textAlignment="CENTER" />
+            </children>
+        </HBox>
+        <SubScene id="subScene" fx:id="subScene" height="713.0" layoutX="14.0" layoutY="37.0" width="1286.0">
+            <root>
+                <Region />
+            </root>
+        </SubScene>
+    </children>
+</AnchorPane>

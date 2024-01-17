@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.port.View.Stock">
+   <children>
+      <HBox prefHeight="713.0" prefWidth="1300.0">
+          <children>
+              <VBox prefHeight="713.0" prefWidth="216.0">
+                  <children>
+      
+                      <ComboBox fx:id="companyComboBox" prefHeight="52.0" prefWidth="216.0" promptText="Sélectionnez une société" style="-fx-background-color: red; -fx-border-radius: 45px;" />
+                      <DatePicker fx:id="date" prefHeight="25.0" prefWidth="219.0" />
+                  </children>
+              </VBox>
+              <VBox alignment="TOP_CENTER" spacing="10">
+      
+                  <LineChart fx:id="closeChart" createSymbols="false" prefHeight="407.0" prefWidth="952.0" title="Valeurs de clôture">
+                      <xAxis>
+                          <NumberAxis forceZeroInRange="false" label="Date" tickLabelsVisible="true" />
+                      </xAxis>
+                      <yAxis>
+                          <NumberAxis forceZeroInRange="false" label="Valeur de clôture" tickLabelsVisible="true" />
+                      </yAxis>
+                  </LineChart>
+      
+                  <LineChart fx:id="volumeChart" createSymbols="false" title="Volume">
+                      <xAxis>
+                          <NumberAxis forceZeroInRange="false" label="Date" tickLabelsVisible="true" />
+                      </xAxis>
+                      <yAxis>
+                          <NumberAxis forceZeroInRange="false" label="Volume" tickLabelsVisible="true" />
+                      </yAxis>
+                  </LineChart>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+      
+              </VBox>
+          </children>
+      </HBox>
+   </children>
+</AnchorPane>
